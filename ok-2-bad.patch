@@ -1,0 +1,11 @@
+--- main-ok.c	2013-09-12 18:17:29.000000000 -0700
++++ main-bad.c	2013-09-12 18:14:02.000000000 -0700
+@@ -70,7 +70,7 @@
+     fprintf (stderr,"%s fun missing\n", path);    
+     exit (1);
+   }
+-  // unlink (tmppath);
++  unlink (tmppath);
+   return fun;
+ }
+ 
